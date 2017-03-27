@@ -1,13 +1,12 @@
 package org.demo.java8.lambda;
 
-import java.util.Arrays;
-import java.util.Comparator;
-
-import org.junit.Test;
-
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.control.Button;
+import org.junit.Test;
+
+import java.util.Arrays;
+import java.util.Comparator;
 
 public class LambdaDemo {
 	/**
@@ -91,6 +90,10 @@ public class LambdaDemo {
 	public void demo3() {
 		Button button = new Button();
 		button.setOnAction(event-> System.out.println("clicking"));
+	}
+
+	public static void main(String[] args) {
+		new LambdaDemo().demo3();
 	}
 
 	
