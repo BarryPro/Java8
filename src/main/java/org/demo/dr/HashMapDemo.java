@@ -1,7 +1,5 @@
 package org.demo.dr;
 
-import sun.util.logging.resources.logging;
-
 /**
  * Java实现HashMap
  * 重复的节点（碰创处理）采用链表的形式
@@ -184,7 +182,7 @@ public class HashMapDemo<K, V> {
 			return value;  
 		}  
 
-		public void setValue(V value) {  
+		public void setValue(V value) {
 			this.value = value;  
 		}  
 
@@ -201,21 +199,15 @@ public class HashMapDemo<K, V> {
 		}  
 	}  
 
-	public static void main(String[] args) {  
-		HashMapDemo<String, String> map = new HashMapDemo<String, String>();  
-		map.put("001", "James");  
-		map.put("002", "Antony");  
+	public static void main(String[] args) {
+		HashMapDemo<String, String> map = new HashMapDemo();
+		map.put("001", "James");
+		map.put("002", "Antony");
 		map.put("003", "Bosh");  
-		map.put("004", "Wade");  
-		map.put("004", "WestBrook");  
-		System.out.println(map);  
-		try {
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-		} finally {
-			
-		}
+		map.put("004", "Wade");
+		map.put("004", "WestBrook");
+		map.put("004", "WestBrook");
+		System.out.println(map);
 		System.out.println(map.size());  
 		System.out.println(map.search("004"));  
 	}  

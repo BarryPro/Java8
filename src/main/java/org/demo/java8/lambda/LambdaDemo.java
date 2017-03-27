@@ -46,7 +46,7 @@ public class LambdaDemo {
 	@Test
 	public void demo22() {
 		String[] strings = {"aa", "aaaa", "a", "aaa"};
-		
+
 		class LengthComparator implements Comparator<String> {
 
 			@Override
@@ -92,6 +92,16 @@ public class LambdaDemo {
 
 	public static void main(String[] args) {
 		new LambdaDemo().demo3();
+		try {
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+
+		}
+		System.out.println(
+		);
+		System.out.println();
 	}
 
 	
