@@ -1,4 +1,7 @@
 package org.demo.dr;
+
+import sun.util.logging.resources.logging;
+
 /**
  * Java实现HashMap
  * 重复的节点（碰创处理）采用链表的形式
@@ -15,7 +18,8 @@ public class HashMapDemo<K, V> {
 	private int capacity;  
 	private int size = 0;  
 
-	private Node<K, V>[] buckets;  
+	// 用于存储Map的键值对节点
+	private Node<K, V>[] buckets;  	
 
 	public HashMapDemo() {  
 		this(DEFAULT_CAPACITY);  
@@ -36,7 +40,7 @@ public class HashMapDemo<K, V> {
 
 		buckets = new Node[this.capacity];  
 	}  
-
+    // 插入方法
 	public void insert(K key, V value) {  
 		if (key == null) {  
 			throw new IllegalArgumentException("key can not be null");  
@@ -204,8 +208,14 @@ public class HashMapDemo<K, V> {
 		map.put("003", "Bosh");  
 		map.put("004", "Wade");  
 		map.put("004", "WestBrook");  
-
 		System.out.println(map);  
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		} finally {
+			
+		}
 		System.out.println(map.size());  
 		System.out.println(map.search("004"));  
 	}  

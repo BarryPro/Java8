@@ -72,7 +72,6 @@ public class LambdaDemo {
 	/**
 	 * java8 以前的写法
 	 */
-	@Test
 	public void demo33() {
 		Button button = new Button();
 		button.setOnAction(new EventHandler<ActionEvent>(){
@@ -86,7 +85,6 @@ public class LambdaDemo {
 	/**
 	 * lambda 表达式
 	 */
-	@Test
 	public void demo3() {
 		Button button = new Button();
 		button.setOnAction(event-> System.out.println("clicking"));
