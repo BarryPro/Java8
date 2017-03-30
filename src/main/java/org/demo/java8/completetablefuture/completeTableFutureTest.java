@@ -12,5 +12,7 @@ public class completeTableFutureTest {
         Supplier<String> supplier = ()->"belong";
         System.out.println(supplier.get());
         System.out.println("IOVU");
+        System.out.println("IOVU");
+        System.out.println("IOVU");
     }
 }
