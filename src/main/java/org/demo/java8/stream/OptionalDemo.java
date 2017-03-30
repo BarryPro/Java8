@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Optional<T> 对象或者是对一个T类型对象的封装，或者表示不是任何对象
+ * OptionalTest<T> 对象或者是对一个T类型对象的封装，或者表示不是任何对象
  * 
  * 
  * @author zhangsf
