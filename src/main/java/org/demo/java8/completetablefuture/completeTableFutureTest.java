@@ -12,5 +12,6 @@ public class completeTableFutureTest {
         Supplier<String> supplier = ()->"belong";
         System.out.println(supplier.get());
         System.out.println("belong.belong@outlook.com");
+        System.out.println("1278423697@qq.com");
     }
 }
