@@ -1,5 +1,7 @@
 package org.demo.java8.lambda;
 
+import java.util.List;
+import java.util.Random;
 import java.util.function.BiFunction;
 
 /**
@@ -25,5 +27,15 @@ public class FunctionInterface {
 	public static void demo2() {
 		BiFunction<String, String, Integer> comp = (first, second) -> Integer.compare(first.length(), second.length());
 	}
-
+	
+	public static void main(String[] args) {
+		
+		Runnable runnable = ()->{System.out.println("belong");};
+		Thread thread = new Thread(runnable);
+		thread.start();
+		Thread thread2 = new Thread(()->{
+			new Random().ints().limit(10).forEach(System.out::println); 
+		});
+		thread2.start();
+	}
 }
