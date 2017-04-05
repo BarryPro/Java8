@@ -48,4 +48,15 @@ public class DateTimeFormatterDemo {
 		LocalDate ldate = LocalDate.parse("2016-12-12", DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 	}
 
+	public static void main(String [] args){
+		System.out.println("==================demo===============");
+		demo();
+		System.out.println("==================demo2===============");
+		//demo2();
+		System.out.println("==================demo3===============");
+		demo3();
+		System.out.println("==================demo4===============");
+		demo4();
+	}
+
 }
