@@ -16,5 +16,14 @@
     <orderEntry type="library" name="Maven: org.junit.jupiter:junit-jupiter-api:5.0.0-M6" level="project" />
     <orderEntry type="library" name="Maven: org.opentest4j:opentest4j:1.0.0-M3" level="project" />
     <orderEntry type="library" name="Maven: org.junit.platform:junit-platform-commons:1.0.0-M6" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://F:/Download/commons-io-2.5/commons-io-2.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
