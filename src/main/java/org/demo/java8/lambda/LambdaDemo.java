@@ -25,7 +25,7 @@ public class LambdaDemo {
 		Worker w = new Worker();
 		new Thread(w).start();
 	}
-	
+
 	/**
 	 * lambda 表达式
 	 */
@@ -36,10 +36,10 @@ public class LambdaDemo {
 				System.out.println(i);
 			}
 		});
-		
+
 		t.start();
 	}
-	
+
 	/**
 	 * java8 以前的写法
 	 */
@@ -54,10 +54,10 @@ public class LambdaDemo {
 				return Integer.compare(first.length(), second.length());
 			}
 		}
-		
+
 		Arrays.sort(strings, new LengthComparator());
 	}
-	
+
 	/**
 	 * lambda 表达式
 	 */
@@ -67,8 +67,8 @@ public class LambdaDemo {
 		Comparator<String> comp = (first, second)-> Integer.compare(first.length(), second.length());
 		Arrays.sort(strings, comp);
 	}
-	
-	
+
+
 	/**
 	 * java8 以前的写法
 	 */
@@ -81,7 +81,7 @@ public class LambdaDemo {
 			}
 		});
 	}
-	
+
 	/**
 	 * lambda 表达式
 	 */
@@ -99,10 +99,8 @@ public class LambdaDemo {
 		} finally {
 
 		}
-		System.out.println(
-		);
-		System.out.println();
+		
 	}
 
-	
+
 }
