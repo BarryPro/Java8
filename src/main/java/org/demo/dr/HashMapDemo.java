@@ -35,7 +35,6 @@ public class HashMapDemo<K, V> {
 			temp <<= 2;  
 		}  
 		this.capacity = temp;  
-
 		buckets = new Node[this.capacity];  
 	}  
     // 插入方法

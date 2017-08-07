@@ -1,16 +1,19 @@
 package org.demo.others;
 
+import org.apache.commons.io.monitor.FileAlterationListener;
+import org.apache.commons.io.monitor.FileAlterationMonitor;
+import org.apache.commons.io.monitor.FileAlterationObserver;
+
 import java.io.File;
-import org.apache.commons.io.monitor.*;
 
 public class FileMonitorTest {
-	FileAlterationMonitor monitor = null;  
+	FileAlterationMonitor monitor = null;
     public FileMonitorTest(long interval) throws Exception {  
         monitor = new FileAlterationMonitor(interval);  
     }  
   
-    public void monitor(String path, FileAlterationListener listener) {  
-        FileAlterationObserver observer = new FileAlterationObserver(new File(path));  
+    public void monitor(String path, FileAlterationListener listener) {
+        FileAlterationObserver observer = new FileAlterationObserver(new File(path));
         monitor.addObserver(observer);  
         observer.addListener(listener);  
     }  
